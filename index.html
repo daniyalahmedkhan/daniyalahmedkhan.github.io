@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>App Cluster – Android apps by Daniyal Ahmed Khan</title>
+<meta name="description" content="App Cluster makes focused Android apps: Long Snap for long scrolling screenshots and Ticketly for QR event ticket scanning and attendee check-in. Free on Google Play.">
+<link rel="canonical" href="https://daniyalahmedkhan.github.io/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="App Cluster – Android apps by Daniyal Ahmed Khan">
+<meta property="og:description" content="Focused Android apps: Long Snap for long scrolling screenshots and Ticketly for QR event ticket scanning. Free on Google Play.">
+<meta property="og:url" content="https://daniyalahmedkhan.github.io/">
+<meta name="twitter:card" content="summary">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Android apps by App Cluster",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "MobileApplication",
+        "name": "Long Snap: Auto Screenshots",
+        "operatingSystem": "Android",
+        "applicationCategory": "UtilitiesApplication",
+        "description": "Scrolling screenshots in one tap. Auto-stitched, no ads, stays on your phone.",
+        "url": "https://play.google.com/store/apps/details?id=com.appcluster.longsnap_auto_scroll_screenshot",
+        "author": { "@type": "Organization", "name": "App Cluster" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "MobileApplication",
+        "name": "Ticketly: Event Ticket Scanner",
+        "operatingSystem": "Android",
+        "applicationCategory": "BusinessApplication",
+        "description": "Professional QR ticket scanning and attendee check-in for event organizers.",
+        "url": "https://play.google.com/store/apps/details?id=com.appcluster.events_ticket_scanner",
+        "author": { "@type": "Organization", "name": "App Cluster" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #f6f4ee;
+    --surface: #ffffff;
+    --ink: #15171c;
+    --muted: #5d6470;
+    --line: #e2ded3;
+    --accent: #1f5eff;
+    --accent-ink: #ffffff;
+    --tile: #e9edf7;
+    --shadow: 0 1px 2px rgba(20, 23, 28, .05), 0 12px 32px -16px rgba(20, 23, 28, .18);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1014;
+      --surface: #161920;
+      --ink: #eceef2;
+      --muted: #9aa2af;
+      --line: #262a33;
+      --accent: #7ea4ff;
+      --accent-ink: #0b1020;
+      --tile: #1f2430;
+      --shadow: none;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+  /* Header */
+  header.site {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    text-decoration: none;
+  }
+  .brand-mark {
+    display: grid;
+    grid-template-columns: repeat(2, 9px);
+    gap: 3px;
+  }
+  .brand-mark i {
+    width: 9px; height: 9px; border-radius: 3px;
+    background: var(--ink);
+  }
+  .brand-mark i:nth-child(2) { background: var(--accent); }
+  nav a {
+    margin-left: 22px;
+    font-size: .95rem;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  nav a:hover { color: var(--ink); }
+
+  /* Hero */
+  .hero { padding: 56px 0 44px; max-width: 760px; }
+  .eyebrow {
+    font-size: .8rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 14px;
+  }
+  h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.3rem, 6.4vw, 4rem);
+    line-height: 1.04;
+    letter-spacing: -.02em;
+    margin: 0 0 18px;
+  }
+  h1 em { font-style: normal; color: var(--accent); }
+  .lede { font-size: 1.15rem; color: var(--muted); margin: 0; max-width: 620px; }
+
+  /* Apps */
+  h2 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -.01em;
+    margin: 0 0 18px;
+  }
+  .apps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-bottom: 64px;
+  }
+  .app {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    padding: 26px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+  }
+  .app-head { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+  .icon {
+    position: relative;
+    flex: none;
+    width: 72px; height: 72px;
+    border-radius: 18px;
+    background: var(--tile);
+    display: grid;
+    place-items: center;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--accent);
+    overflow: hidden;
+  }
+  .icon img {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .kind {
+    font-size: .75rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 2px;
+  }
+  .app h3 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 1.35rem;
+    line-height: 1.2;
+    margin: 0;
+  }
+  .tagline { margin: 0 0 14px; }
+  .app ul {
+    list-style: none;
+    margin: 0 0 22px;
+    padding: 0;
+    color: var(--muted);
+    font-size: .97rem;
+  }
+  .app li { padding: 7px 0; border-top: 1px solid var(--line); }
+  .app li:last-child { border-bottom: 1px solid var(--line); }
+  .note { font-size: .82rem; color: var(--muted); margin: -8px 0 20px; }
+  .actions { margin-top: auto; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-weight: 600;
+    font-size: .97rem;
+    text-decoration: none;
+  }
+  .btn:hover { filter: brightness(1.08); }
+  .btn svg { width: 14px; height: 14px; }
+  .link { font-size: .95rem; color: var(--muted); }
+
+  /* About */
+  .about {
+    border-top: 1px solid var(--line);
+    padding: 48px 0 56px;
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 32px;
+  }
+  .about p { margin: 0 0 14px; color: var(--muted); }
+  .about p:last-child { margin: 0; }
+  @media (max-width: 700px) {
+    .about { grid-template-columns: 1fr; gap: 8px; }
+    nav a { margin-left: 16px; }
+  }
+
+  /* Footer */
+  footer.site {
+    border-top: 1px solid var(--line);
+    padding: 26px 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    justify-content: space-between;
+    font-size: .92rem;
+    color: var(--muted);
+  }
+  footer.site a { margin-right: 18px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <a class="brand" href="./">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      App Cluster
+    </a>
+    <nav>
+      <a href="#apps">Apps</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Android apps</p>
+      <h1>Small apps that do <em>one job</em> properly.</h1>
+      <p class="lede">
+        App Cluster is the home of Android apps built by Daniyal Ahmed Khan.
+        Each one solves a single, specific problem and is free to download on Google Play.
+      </p>
+    </section>
+
+    <section id="apps">
+      <h2>Apps</h2>
+      <div class="apps">
+
+        <!-- ============ Long Snap ============ -->
+        <article class="app">
+          <div class="app-head">
+            <div class="icon">L<img
+              src="https://play-lh.googleusercontent.com/_AggLxc-W5Dlq53lVuQXCXv9gbcvzuKZoqBZQbPkxjAeswJEOyWewql2F52WpD-WdP5nP4qWGXnOx92sjXsQBl8=s192"
+              alt="Long Snap app icon" width="72" height="72" loading="lazy" onerror="this.remove()"></div>
+            <div>
+              <p class="kind">Screenshot tool</p>
+              <h3>Long Snap: Auto Screenshots</h3>
+            </div>
+          </div>
+          <p class="tagline">Scrolling screenshots in one tap. Auto-stitched, no ads, stays on your phone.</p>
+          <ul>
+            <li>Auto mode scrolls the page and captures it for you</li>
+            <li>Manual mode lets you snap each screen yourself</li>
+            <li>Stitches everything into one long image</li>
+            <li>No ads, and screenshots never leave your device</li>
+          </ul>
+          <div class="actions">
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.appcluster.longsnap_auto_scroll_screenshot" target="_blank" rel="noopener">
+              Get it on Google Play
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- ============ Ticketly ============ -->
+        <article class="app">
+          <div class="app-head">
+            <div class="icon">T<img
+              src="https://play-lh.googleusercontent.com/OpCQndb3c4m8W5wCA19hqQqoAAyZ65BAlAty_sFb3NFvBnNWGKrdFkYl6JQiUXgMmHcXNwhwUNwQSZF1tef_8g=s192"
+              alt="Ticketly app icon" width="72" height="72" loading="lazy" onerror="this.remove()"></div>
+            <div>
+              <p class="kind">Event check-in</p>
+              <h3>Ticketly: Event Ticket Scanner</h3>
+            </div>
+          </div>
+          <p class="tagline">Professional QR ticket scanning and attendee check-in for event organizers.</p>
+          <ul>
+            <li>Scan QR tickets at the door with your phone</li>
+            <li>Check attendees in and manage the guest list</li>
+            <li>Works with WordPress sites using Event Tickets Plus and The Events Calendar</li>
+          </ul>
+          <p class="note">Ticketly is an independent app and is not affiliated with Event Tickets Plus or The Events Calendar.</p>
+          <div class="actions">
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.appcluster.events_ticket_scanner" target="_blank" rel="noopener">
+              Get it on Google Play
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!--
+          TO ADD ANOTHER APP: copy one whole <article class="app"> ... </article> block above,
+          paste it here, then change:
+            1. the letter and the icon image address inside <div class="icon">
+            2. the "kind" label, the app name and the tagline
+            3. the list of features
+            4. the Google Play link (details?id=your.package.name)
+          Also add the app to the list in the <script type="application/ld+json"> block near the top.
+        -->
+
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About</h2>
+      <div>
+        <p>
+          App Cluster is a one-person studio run by Daniyal Ahmed Khan, a mobile developer.
+          Each app is built natively for Android and kept small on purpose, so it stays fast and easy to use.
+        </p>
+        <p>
+          Found a bug or want a feature? Send an email using the address below.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site" id="contact">
+    <div>
+      <a href="mailto:daniyalahmed520@gmail.com">daniyalahmed520@gmail.com</a>
+      <a href="https://play.google.com/store/apps/developer?id=App+Cluster" target="_blank" rel="noopener">Google Play</a>
+      <a href="https://github.com/daniyalahmedkhan" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <div>&copy; 2026 App Cluster</div>
+  </footer>
+
+</div>
+</body>
+</html>
